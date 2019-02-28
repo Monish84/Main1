@@ -1,0 +1,26 @@
+<!--  we are using document.form1.name.value to get the value of name field.
+
+Here, document is the root element that represents the html document.
+
+form1 is the name of the form.
+
+name is the attribute name of the input text.
+
+value is the property, that returns the value of the input text.  -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">  
+function printvalue(){  
+	var name=document.form1.name.value;  
+	alert("Welcome: Mr "+name);  
+}  
+</script>  
+  
+<form name="form1">  
+Enter Name:<input type="text" name="name"/>  <br/>
+<input type="button" onclick="printvalue()" value="print name"/>  
+</form>  
+</body>
+</html>
